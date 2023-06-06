@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: rgb(131, 129, 255);
+            background-color: rgb(92, 90, 232);
             font: normal 15pt arial;
         }
     </style>
@@ -20,13 +20,26 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resutado</p>
     <p>Aprendendo <strong>DOM</strong> em Javascript</p>
-    <div>Clique aqui</div>
+    <div name="msg">Clique aqui</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write('Esta escrito assim: ' + p1.innerText)
-        p1.style.color = 'blue'
-        p1.style.backgroundColor = 'yellow'
+        var p1 = window.document.getElementsByTagName('p')[1] //por Marca
+        //window.document.write('Esta escrito assim: ' + p1.innerText)
+        //document.write(p1.innerHTML) - utilizando formataçao.
+        //document.write(p1.innerText) - utilizando texto comum.
+        //window.alert(p1.innerText)
+        //p1.style.backgroundColor = 'yellow' - estilizaçao no JS com var 
+
+        //var corpo = window.document.body
+        //corpo.style.color = 'yellow'
+
+        /* var d = window.document.getElementById('msg')//por ID
+        d.style.color = 'white'
+        d.innerText = 'Estou aguardando.....' */
+
+        var d = window.document.getElementsByTagName('msg')[0]
+        d.innerText = 'Ola'
+    
     </script>
     
 </body>
