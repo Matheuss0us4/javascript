@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: rgb(92, 90, 232);
+            background-color: rgb(74, 117, 233);
             font: normal 15pt arial;
         }
     </style>
@@ -17,10 +17,10 @@
 
 <body>
 
-    <h1>Iniciando estudos com DOM</h1>
+    <h1>iniciando estudos com DOM</h1>
     <p>Aqui vai o resutado</p>
     <p>Aprendendo <strong>DOM</strong> em Javascript</p>
-    <div name="msg">Clique aqui</div>
+    <div id="msg">Clique aqui</div>
 
     <script>
         //var p1 = window.document.getElementsByTagName('p')[1] //por Marca
@@ -33,12 +33,15 @@
         //var corpo = window.document.body
         //corpo.style.color = 'yellow'
 
-        /* var d = window.document.getElementById('msg')//por ID
-        d.style.color = 'white'
-        d.innerText = 'Estou aguardando.....' */
+        //var d = window.document.getElementById('msg')
+        //d.style.color = 'white'
+        //d.innerText = 'Estou aguardando.....'
+        //d.style.color = 'yellow' adicionar paragrafo com cor
+        
+        //window.document.body.style.backgroundColor = 'lightgreen' mudar cor de fundo.
 
-         window.document.write(window.document.U)
-         document.body.style.color = 'black'
+        var p = window.document.getElementsByTagName('p')[0]
+        window.document.write(p.innerText)
     
     </script>
     
