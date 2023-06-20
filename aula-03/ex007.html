@@ -8,12 +8,12 @@
 <style>
     body {
         font: normal 14pt arial;
-        background-color: rgb(120, 172, 240);
+        background-color: rgb(77, 154, 255);
         color: white;
     }
 
     h1 {
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 7px black;
     }
 
     input {
@@ -21,6 +21,10 @@
         height: 30px;
         border-radius: 5px;
         font: normal 12pt verdana;
+    }
+
+    input.botao {
+        background-color: yellow;
     }
 
     div {
@@ -32,7 +36,7 @@
 <h1>Somando Valores</h1>
 <input type="number" name="txtn1" id="txtn1">
 <input type="number" name="txtn2" id="txtn2">
-<input type="button" value="somar" onclick="somar()">
+<input type="button" value="somar" onclick="somar()" class="botao">
 <div id="res">Resultado</div>
 
 
@@ -46,7 +50,7 @@
       var n1 = Number(tn1.value)
       var n2 = Number(tn2.value)
       var s = n1 + n2
-      res.innerHTML = `A soma entre ${n1} e ${n2} e igual a: ${s}`
+      res.innerHTML = `A soma entre ${n1} e ${n2} e igual a: <strong>${s}</strong>`
     }
 
 </script>
