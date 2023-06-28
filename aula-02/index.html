@@ -18,9 +18,9 @@
 <body>
 
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resutado</p>
+    <p name=>Aqui vai o resutado</p>
     <p>Aprendendo <strong>DOM</strong> em Javascript</p>
-    <div name="msg">Clique aqui</div>
+    <div class="msg">Clique aqui</div>
 
     <script>
         var p1 = window.document.getElementsByTagName('p')[1] //por Marca
@@ -37,9 +37,10 @@
         d.style.color = 'white'
         d.innerText = 'Estou aguardando.....' */
 
-        var d = window.document.getElementsByTagName('msg')[0]
-        d.innerText = 'Ola'
-    
+        var d = window.document.getElementsByTagName('p') 
+        window.document.write('Estou triste ' + d.innerHTML)
+        
+        
     </script>
     
 </body>
