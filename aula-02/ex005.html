@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: rgb(92, 90, 232);
+            background-color: rgb(74, 117, 233);
             font: normal 15pt arial;
         }
     </style>
@@ -17,13 +17,14 @@
 
 <body>
 
+
     <h1>Iniciando estudos com DOM</h1>
     <p name=>Aqui vai o resutado</p>
     <p>Aprendendo <strong>DOM</strong> em Javascript</p>
     <div class="msg">Clique aqui</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[1] //por Marca
+        //var p1 = window.document.getElementsByTagName('p')[1] //por Marca
         //window.document.write('Esta escrito assim: ' + p1.innerText)
         //document.write(p1.innerHTML) - utilizando formataçao.
         //document.write(p1.innerText) - utilizando texto comum.
@@ -33,14 +34,25 @@
         //var corpo = window.document.body
         //corpo.style.color = 'yellow'
 
-        /* var d = window.document.getElementById('msg')//por ID
-        d.style.color = 'white'
-        d.innerText = 'Estou aguardando.....' */
+        //var d = window.document.getElementById('msg')
+        //d.style.color = 'white'
+        //d.innerText = 'Estou aguardando.....'
+        //d.style.color = 'yellow' adicionar paragrafo com cor
+        
+        //window.document.body.style.backgroundColor = 'lightgreen' mudar cor de fundo.
 
-        var d = window.document.getElementsByTagName('p') 
-        window.document.write('Estou triste ' + d.innerHTML)
+        //var d = window.document.getElementsByName('msg')[0]
+        //d.innerText = 'Ola!'
+
+        //var c = window.document.querySelector('div.msg')
+        //c.innerText = 'Seja bem vindo'
+        //c.style.color = 'red'
+       
+
+
         
         
+
     </script>
     
 </body>
