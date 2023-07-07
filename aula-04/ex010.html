@@ -20,6 +20,10 @@
             var res = document.querySelector('div#res')
             var vel = Number(tv.value)
             res.innerHTML = `A velocidade do carro e de <strong>${vel}</strong>km/h`
+            if (vel > 60) {
+                res.innerHTML += '<p>Voce foi <strong>MULTADO</strong> por excesso de velocidade</p>'
+            }
+            res.innerHTML += '<p>Dirija sempre com sinto de segurança</p>'
         }
     </script>
 
