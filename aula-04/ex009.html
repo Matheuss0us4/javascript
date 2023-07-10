@@ -8,21 +8,27 @@
 </head>
 
 <body>
-   <h1>Sua Nacionalidade</h1>
-   <input type="text" name="nc" id="nc">
-   <input type="button" value="verificar" onclick="verificar()">
-   <div id="res">Qual seu pais de origem?</div>
 
-   <script>
-    function verificar() {
-        var nac = document.getElementById('nc')
-        var resu = document.getElementById('res')
-        resu.innerHTML = 'Se Voce naceu no Brasil voce e?'
-       if (nac == 'Brasil') {
-            resu.innerHTML += 'Voce e Brasileiro'
-       }
-    }
-   </script>
+    <h1>Nacionalidades</h1>
+
+    <input type="text" id="nac">   
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Vivendo no Canada </div>
+
+    <script>
+        
+        function verificar() {
+            var nac = document.getElementById('nac')
+            var resu = document.getElementById('res')
+            var ps = String(nac.value)
+            if (ps == 'Canada') {
+                resu.innerHTML += 'sou  Canadense'
+            } else {
+                resu.innerHTML += 'mais sou <strong>Extrangeiro</strong>'
+            }
+        }
+        
+    </script>
 
 </body>
 
