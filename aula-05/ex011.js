@@ -1,4 +1,25 @@
-var idade = 21
+var nota = 101
+console.log(`Voce tirou a nota ${nota}`)
+if(nota > 600) {
+    console.log('Parabens voçe passou!')
+} else if (nota > 100 || nota < 70) {
+    console.log('Recuperaçao!')
+} else {
+    console.log('Reprovado!')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* var idade = 21
 console.log(`Voçe tem ${idade} anos`)
 if (idade < 16) {
     console.log('Nao vota!')
@@ -7,3 +28,4 @@ if (idade < 16) {
 } else {
     console.log('Voto Obrigatorio!')
 }
+ */
