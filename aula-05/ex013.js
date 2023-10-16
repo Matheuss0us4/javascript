@@ -1,5 +1,5 @@
 var agora = new Date()
-var diaSema = agora.getDay()
+var diaSema = agora.getDay()/* esse elemento coleta o dia da semana atual em numero exemplo abixo */
 /* 
     0 - Domingo
     1 - Segunda
