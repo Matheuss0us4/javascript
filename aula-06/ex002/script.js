@@ -11,7 +11,7 @@ function verificar() {
         var genero = ''
         var imagem = document.createElement('img')
         
-        if (fsex[0].checked) {/* se fsex tiver maecado em 0 que e masculino entao */
+        if (fsex[0].checked) {/* se fsex tiver marcando em 0 que e masculino entao */
             /* sera masculino */
             genero = 'Homen'
             if (idade >= 0 && idade < 14) {
@@ -42,12 +42,12 @@ function verificar() {
                 /* idosa */
                 imagem.src = 'mulher-idosa.png'
             }
-         
+           
         }
         
-            
+              
     }
-    res.style.textAlign = 'center'
+    res.style.textAlign = "center"
     res.innerHTML = `Gernero ${genero} e idade ${idade}`
     res.appendChild(imagem) 
 }
