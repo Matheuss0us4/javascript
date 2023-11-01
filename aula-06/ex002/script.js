@@ -6,7 +6,7 @@ function verificar() {
     if (fano.value.length == 0 || fano.value > ano) {
         /* erro ano igual a 0 */
     } else {
-        var fsex = document.getElementsByName('radsex')
+        var fsex = document.getElementsByName('radsex')/* o getElementByName() foi usando como parametro para os dois input radios para que nao precisasse fazer os dois input e para facilitar na condicao logica. */
         var idade = ano - Number(fano.value)
         var genero = ''
         var imagem = document.createElement('img')
