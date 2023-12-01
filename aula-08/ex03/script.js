@@ -1,34 +1,39 @@
+/* function contar() {
+    var resu = 0
+    while(resu <= 5) {
+        document.getElementById('res').innerHTML  +=resu
+        resu++
+    }
+} */
+
 function contar() {
-  /*   var c = 1
-    while(c < 10) {
-        console.log(c)
-        c++
-    } */
-   
-    
-   
-/* criar as variaveis de inicio, fim, e salto */
     var n1 = document.getElementById('txn1')
     var n2 = document.getElementById('txn2')
     var n3 = document.getElementById('txn3')
     var resu = document.getElementById('res')
     var ini = Number(n1.value)
-    var fim =  Number(n2.value)
+    var fim = Number(n2.value)
+    var salto = Number(n3.value) 
     if(ini == 0 && fim == 0) {
-        window.alert('Incira um numero')
+        window.alert('Insira o inicio e fim')
+    }  else if (salto == 0) {
+        window.alert('[ERRO!] salto igual 0')
     } else {
-        var salto = Number(n3.value) 
-         /* criar um condiçao na qual se o inicio 
-    for maior que o fim entao sera uma contagem 
-    normal se nao sera regresiva */
-        if (ini > fim) {
-            resu.innerHTML = 'Regresiva'
-            while(fim <= ini) {
-                fim = fim + salto
-                resu.innerHTML = `${fim}`
+        if (ini < fim) {
+            resu.innerHTML = 'CONTAGEM PROGRESSIVA<br>'
+            while(ini <= fim){
+                resu.innerHTML +=ini
+                ini = ini + salto
             }
         } else {
-            resu.innerHTML = 'Normal'
+            resu.innerHTML = 'CONTAGEM REGRESSIVA<br>'
+            while(ini >= fim) {
+                JSON(emo)
+                resu.innerHTML +=ini
+                ini = ini - salto
+            }
         }
-    } 
-} 
+    }
+
+    
+}
