@@ -1,24 +1,18 @@
 function tabuada() {
-    /* criar as variaveis */
-    let res = document.getElementById('res')
-    let tabu = document.getElementById('tabu')
-    if(tabu.value.length == 0) {
-        window.alert('insira um numero!')
+    let num = document.getElementById('txt1')
+    let tab = document.getElementById('selTab')
+    if(num.value.length == 0){
+        window.alert('Por favor, digite um numero!')
     } else {
-        let t = Number(tabu.value)
-        let r = 1
-        for(let t = tab;tab <= 10; tab++) {
-            res.innerHTML += tab
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while(c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
         }
-    } 
-    
-    /* criar uma condiçao na qual se o input do numero da tabuada for 0 ou nada entao 'INSERIR UM NUMERO!'*/
-
-    /* proseguir a condiçao com o else, converter o inpute tabuada para numero */
-    
-    while(c <= 10) {
-        r = c * t
-        res.innerHTML += `${c} x ${t} = ${r}<br>`
-        c++
     }
 }
