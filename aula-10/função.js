@@ -1,8 +1,8 @@
 function parimp(n) {
     if(n%2 == 0) {
-        return 'impar!'
+        return'par'
     } else {
-        return 'par!'
+        return'impar'
     }
-}
-console.log('O numro é',parimp(3))
+} 
+console.log('O numero é',parimp(12))
